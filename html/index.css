@@ -1,0 +1,141 @@
+
+:root{
+    --main-color: #191F3A;
+    --menubar: #EAA023;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    box-sizing: border-box;
+
+}
+ul {
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.container {
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.top {
+    background-color:var(--main-color);
+    height: 80px;
+}
+.top .logo h2 {
+   color: var(--menubar);
+   font-family: 'Luxurious Script', cursive;
+   padding: 20px;
+   font-size: 200% ;
+}
+.top .menu-bar h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 2px solid var(--menubar);
+    border-radius: 10%;
+    color: var(--menubar);
+    cursor: pointer;
+}
+.top .menu-bar.active{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background-color:var(--main-color);
+    padding: 80px 30px 40px;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.nav.active {
+    transform: translateY(0);
+}
+
+.nav a {
+    color: white;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+/*main imagine*/
+.main-imagine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.main-imagine::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:url("imagine/main-imagine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+.main-imagine::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black ;
+    opacity: 0.1;
+    z-index: -2;
+}
+.main-imagine .main-imagine-content{
+    text: align left 100px;
+    max-width: 900px;
+    text-align: center;
+}
+.main-imagine .main-imagine-content h3{
+    font-size: 50px;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.main-imagine .main-imagine-content p{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+    font-family: inherit;
+}
+.main-imagine .main-imagine-content button{
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 2px solid var(--menubar);
+    border-radius: 50px;
+    color: var(--menubar);
+    cursor: pointer;
+
+}
+.main-imagine .main-imagine-content button:hover{
+    background-color: white;
+}
+
