@@ -150,3 +150,12 @@ a{
 .main-imagine .main-imagine-content button:hover{
     background-color: white;
 }
+.pi .opi{
+    margin-top: 60px;
+    text-align: center;
+
+}
+.pi .opi h4{
+    max-width: 900px;
+    margin-left: 160px;
+}
