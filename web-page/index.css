@@ -1,0 +1,408 @@
+
+:root{
+    --main-color: #191F3A;
+    --menubar: #EAA023;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    box-sizing: border-box;
+
+}
+ul {
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.container {
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.top {
+    background-color:var(--main-color);
+    padding: 5px;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+.top .logo h2 {
+   color: var(--menubar);
+   font-family: 'Luxurious Script', cursive;
+   padding: 20px;
+   font-size: 200% ;
+   z-index: 2;
+   
+}
+.top .menu-bar button{
+    justify-content: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 2px solid var(--menubar);
+    border-radius: 10%;
+    color: var(--menubar);
+    cursor: pointer;
+    margin-top: 8px ;
+}
+.top .menu-bar button:hover{
+
+    background-color: aliceblue;
+}
+.nav {
+    position: fixed;
+    right: 0;
+    top:0 ;
+    width: 100%;
+    height: 200px;
+    background-color:var(--main-color);
+    padding: 80px 30px 40px;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 0.3s ease;
+}
+.nav.active {
+    transform: translateY(0);
+}
+.nav li{
+  display: inline-flex;
+  margin-left: 100px;
+}
+
+.nav a {
+    color: white;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.nav a:hover{
+    color: var(--menubar);
+}
+
+/*main imagine*/
+.main-imagine{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+ }
+.main-imagine::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:url("imagine/main-imagine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    margin-top: 50px;
+    z-index: -10;
+}
+.main-imagine::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black ;
+    opacity: 0.1;
+    z-index: -9;
+}
+.main-imagine .main-imagine-content{
+    text-align: left 100px;
+    max-width: 900px;
+    text-align: center;
+}
+.main-imagine .main-imagine-content h3{
+    font-size: 50px;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.main-imagine .main-imagine-content p{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+    font-family: inherit;
+}
+.main-imagine .main-imagine-content a{
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 2px solid var(--menubar);
+    border-radius: 50px;
+    color: var(--menubar);
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition:ease-in-out;
+
+}
+.main-imagine .main-imagine-content a:hover{
+    background-color: white;
+}
+.caption-heading{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 40px;
+}
+.heading{
+    background-color:whitesmoke;
+    z-index: 0;
+    
+}
+.caption-heading h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #EAA023;
+    font-size: 50px;
+}
+.caption-heading h3{
+    margin-top: 30px;
+    
+}
+.pi .heading{
+  height: 600px;
+}
+.pi .img1{
+    width: 100px;
+    background: var(--main-color);
+    float: left;
+    height: 600px;
+    
+}
+.pi .img2{
+    width: 100px;
+    background: var(--main-color);
+    float: right;
+    height: 600px;
+}
+.it-tech .heading {
+    z-index: 0;
+    height: 800px;
+    margin-top: 120px;
+    text-align: center;
+}
+.img-fluid {
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+}
+.portfolio-caption-heading{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 300px;
+}
+
+.portfolio-item a{
+    width: 300px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline-block;   
+    cursor: pointer;
+}
+.portfolio-link .portfolio-caption-heading{
+    color: black;
+    cursor: pointer;
+}
+.portfolio-link .portfolio-caption-heading:hover{
+    color: var(--menubar);
+}
+.it-work.heading{
+    margin-top: 50px;
+    height: 1000px;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+    width: 157px;
+    height: 156px;
+    text-align: center;
+    
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+  }
+  .timeline > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  .timeline > li:after, .timeline > li:before {
+    display: table;
+    content: " ";
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-image {
+    position: absolute;
+    z-index:0 ;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #ffc800;
+  }
+  .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
+    margin-top: 0;
+    color: inherit;
+  }
+  .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+    text-transform: none;
+  }
+  .timeline .timeline-body > ul,
+  .timeline .timeline-body > p {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline:before {
+      left: 50%;
+    }
+    .timeline > li {
+      min-height: 100px;
+      margin-bottom: 100px;
+    }
+    .timeline > li .timeline-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+    }
+    .timeline > li .timeline-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
+    .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 16px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+    }
+  }
+  @media (min-width: 992px) {
+    .timeline > li {
+      min-height: 150px;
+    }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px;
+    }
+    .timeline > li .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+    }
+    .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 30px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 20px 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .timeline > li {
+      min-height: 170px;
+    }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px 100px;
+    }
+    .timeline > li .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+    }
+    .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+      margin-top: 40px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 100px 20px 20px;
+    }
+  }
+.para{
+    max-width: 1800px;
+    margin-left: 500px;
+}
+
