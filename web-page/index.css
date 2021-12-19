@@ -417,5 +417,39 @@ a{
   transition: 0.5 ease;
 
 }
+.modal-container{
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 900px;
+}
+.modal-container .modal{
+  text-align: center;
+}
+.close{
+  background-color: #47a386;
+  border-radius:5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 30px;
+}
+.modal{
+  background-color: #fff;
+  width: 1400px;
+  max-width: 100%;
+  padding: 10px 50px;
+  text-align: center;
+  height: 90vh;
+}
+.modal h1{
+  margin: 0;
+  font-family: 'Luxurious Script';
+  color: #EAA023;
+  font-size: 70px;
+}
+.modal p{
+  font-size: 20px;
+}
 
 
