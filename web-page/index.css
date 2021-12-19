@@ -81,7 +81,7 @@ a{
 .nav a {
     color: white;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image:url("imagine/main-imagine.jpg");
+    background-image:url("imagine/piec14.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,13 +129,13 @@ a{
 }
 .main-imagine .main-imagine-content h3{
     font-size: 80px;
-    color: white;
+    color: var(--menubar);
     font-family: 'Open Sans Condensed', sans-serif;
 
 }
 .main-imagine .main-imagine-content p{
     font-size: 55px;
-    color: white;
+    color: var(--menubar);
     font-weight: bold;
     margin: 15px 0;
     font-family: inherit;
@@ -167,7 +167,7 @@ a{
 .caption-heading h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #EAA023;
-    font-size: 50px;
+    font-size: 80px;
 }
 .caption-heading h3{
     margin-top: 30px;
