@@ -174,20 +174,20 @@ a{
     
 }
 .pi .heading{
-  height: 600px;
+  height:fit-content;
 }
 .pi .img1{
     width: 100px;
     background: var(--main-color);
     float: left;
-    height: 600px;
+    height:fit-content;
     
 }
 .pi .img2{
     width: 100px;
     background: var(--main-color);
     float: right;
-    height: 600px;
+    height:fit-content;
 }
 .it-tech .heading {
     z-index: 0;
